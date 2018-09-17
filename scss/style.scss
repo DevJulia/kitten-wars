@@ -1,0 +1,164 @@
+body {
+    background-image: url(../images/bg.jpg);
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+}
+
+
+header .container {
+    padding: 0;
+}
+
+    .banner {
+        margin-top: 20px;
+        background-color: white;
+        background-image: url(../images/banner.png);
+        height: 319px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+.list-pachat {
+    border:15px inset #ffb503;
+    
+    .crown_img {
+        position: absolute;
+        height: 70px;
+    }
+}
+
+    .pachat {
+        position: relative;
+
+        .avatar {
+            height: 300px;
+            width: 300px;
+            border-radius: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+
+#list-cat {
+    padding-top: 30px;
+}
+
+    .cat-info {
+
+        .avatar {
+            position: relative;
+            height: 220px;
+            width: 220px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 110px;   
+            margin: auto;
+        }
+    }
+
+    .select-kitten {
+        position: absolute;
+    }
+
+
+#startFight {
+	display: none;
+}
+
+
+.kitten_info {
+    
+    color: black;
+    
+    .attributes {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 28.5px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .avatar {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    &.selected {
+        
+        .attributes {
+            opacity: 0.8;
+        }    
+    }
+}
+
+
+.detailed_stats {
+	input {
+		display: none;
+	}
+}
+
+
+.attributes {
+    
+    width: 220px;
+    height: 220px;
+    background: #a8ccc9; 
+    border-radius: 110px;   
+    
+    div {
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        top: 75px;
+        text-align: center;
+        
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
+.none-list {
+	list-style-type: none;
+}
+
+
+.form_search {
+    display: flex;
+    justify-content: flex-end;
+    
+    input {
+        width: 200px;
+    }
+}
+
+
+footer {
+    .container {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+    }
+    
+    p {
+        margin: 0;
+    }
+}
+
+.invalid {
+	color: red;
+	font-size: 0.9rem;
+}
+
+#datepicker {
+	position: relative; 
+	z-index: 3;
+}
